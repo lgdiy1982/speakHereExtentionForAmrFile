@@ -48,6 +48,20 @@ Copyright (C) 2012 Apple Inc. All Rights Reserved.
 */
 
 #include "AQRecorder.h"
+#include <IceUtil/Thread.h>
+using namespace IceUtil;
+class DecordThread : public IceUtil::Thread
+{
+public:
+    virtual void run()
+    {
+        
+    }
+private:
+    
+    
+};
+
 
 // ____________________________________________________________________________________
 // Determine the size, in bytes, of a buffer necessary to represent the supplied number

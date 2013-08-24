@@ -45,6 +45,8 @@
 		4D12A0BE17C89F7F00BAE372 /* Timer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4D12A0A717C89F7F00BAE372 /* Timer.cpp */; };
 		4D12A0BF17C89F7F00BAE372 /* Unicode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4D12A0A817C89F7F00BAE372 /* Unicode.cpp */; };
 		4D12A0C017C89F7F00BAE372 /* UUID.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4D12A0A917C89F7F00BAE372 /* UUID.cpp */; };
+		4D8F829817C8B1B80027732A /* ReStartableThread.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4D8F829417C8B1B80027732A /* ReStartableThread.cpp */; };
+		4D8F829917C8B1B80027732A /* RingBufferA.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4D8F829617C8B1B80027732A /* RingBufferA.cpp */; };
 		AFC29B3C11D568A1006F150F /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = AFC29B3511D568A1006F150F /* Icon-72.png */; };
 		AFC29B3D11D568A1006F150F /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = AFC29B3611D568A1006F150F /* Icon-Small-50.png */; };
 		AFC29B3E11D568A1006F150F /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = AFC29B3711D568A1006F150F /* Icon-Small.png */; };
@@ -158,6 +160,10 @@
 		4D12A0A717C89F7F00BAE372 /* Timer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Timer.cpp; sourceTree = "<group>"; };
 		4D12A0A817C89F7F00BAE372 /* Unicode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Unicode.cpp; sourceTree = "<group>"; };
 		4D12A0A917C89F7F00BAE372 /* UUID.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UUID.cpp; sourceTree = "<group>"; };
+		4D8F829417C8B1B80027732A /* ReStartableThread.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ReStartableThread.cpp; sourceTree = "<group>"; };
+		4D8F829517C8B1B80027732A /* ReStartableThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReStartableThread.h; sourceTree = "<group>"; };
+		4D8F829617C8B1B80027732A /* RingBufferA.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RingBufferA.cpp; sourceTree = "<group>"; };
+		4D8F829717C8B1B80027732A /* RingBufferA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RingBufferA.h; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		AFC29B3511D568A1006F150F /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-72.png"; path = "Images/Icon-72.png"; sourceTree = "<group>"; };
 		AFC29B3611D568A1006F150F /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small-50.png"; path = "Images/Icon-Small-50.png"; sourceTree = "<group>"; };
@@ -237,6 +243,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				4D8F829317C8B1B80027732A /* ring */,
 				4D12A06917C89F7E00BAE372 /* ice-lib */,
 				4D129FA917C89DB500BAE372 /* amr */,
 				F73FE19D0F743C1900F0F3CC /* ReadMe.txt */,
@@ -458,6 +465,17 @@
 			path = IceUtil;
 			sourceTree = "<group>";
 		};
+		4D8F829317C8B1B80027732A /* ring */ = {
+			isa = PBXGroup;
+			children = (
+				4D8F829417C8B1B80027732A /* ReStartableThread.cpp */,
+				4D8F829517C8B1B80027732A /* ReStartableThread.h */,
+				4D8F829617C8B1B80027732A /* RingBufferA.cpp */,
+				4D8F829717C8B1B80027732A /* RingBufferA.h */,
+			);
+			path = ring;
+			sourceTree = "<group>";
+		};
 		F76949D90F40F32A006C6FBF /* AudioViews */ = {
 			isa = PBXGroup;
 			children = (
@@ -595,6 +613,8 @@
 				4D12A0BE17C89F7F00BAE372 /* Timer.cpp in Sources */,
 				4D12A0BF17C89F7F00BAE372 /* Unicode.cpp in Sources */,
 				4D12A0C017C89F7F00BAE372 /* UUID.cpp in Sources */,
+				4D8F829817C8B1B80027732A /* ReStartableThread.cpp in Sources */,
+				4D8F829917C8B1B80027732A /* RingBufferA.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
